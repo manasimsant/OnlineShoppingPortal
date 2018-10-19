@@ -1,0 +1,14 @@
+127.0.0.1 - - [19/Oct/2018:02:07:18 -0400] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:02:07:20 -0400] "GET /ShoppingFrontEnd/ HTTP/1.1" 500 3789
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:02:07:20 -0400] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:02:07:23 -0400] "GET /ShoppingFrontEnd/ HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:02:07:32 -0400] "GET /ShoppingFrontEnd/ HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:02:07:39 -0400] "GET /ShoppingFrontEnd/index HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:02:07:43 -0400] "GET /ShoppingFrontEnd/index HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:02:07:43 -0400] "GET /ShoppingFrontEnd/index HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:02:07:44 -0400] "GET /ShoppingFrontEnd/index HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:02:07:44 -0400] "GET /ShoppingFrontEnd/index HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:02:07:45 -0400] "GET /ShoppingFrontEnd/index HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:02:07:47 -0400] "GET /ShoppingFrontEnd/index HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:02:07:47 -0400] "GET /ShoppingFrontEnd/index HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:02:07:48 -0400] "GET /ShoppingFrontEnd/index HTTP/1.1" 404 1047

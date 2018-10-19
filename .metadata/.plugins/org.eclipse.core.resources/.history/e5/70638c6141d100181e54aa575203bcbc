@@ -1,0 +1,44 @@
+package org.dteja.controllers;
+
+import java.util.List;
+
+import org.dteja.dao.CategoryDAO;
+import org.dteja.models.Category;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class CategoryController {
+	
+	@Autowired
+	CategoryDAO categoryDAO;
+	
+	@RequestMapping("/category")
+	public String showCategoryPage(Model m){
+		List<Category> listCategory=categoryDAO.listCategories();
+		m.addAttribute("categoryList", listCategory);
+		return "Category";
+	} 
+	
+	@RequestMapping(value="/addCategory",method=RequestMethod.POST)
+	public String addCategory(@RequestParam("categoryname")String categoryname,@RequestParam("categorydescription")String categorydescription,Model m)
+	{
+		
+		Category category=new Category();
+		category.setCategoryname(categoryname);
+		category.setCategordescription(categorydescription);
+		
+		categoryDAO.addCategory(category);
+		
+		List<Category> listCategory=categoryDAO.listCategories();
+		m.addAttribute("categoryList", listCategory);
+		
+		return "Category";
+	}
+		
+	
+}

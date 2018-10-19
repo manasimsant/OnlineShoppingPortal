@@ -1,0 +1,5 @@
+package org.dteja.models;
+
+public class Supplier {
+
+}

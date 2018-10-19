@@ -1,0 +1,57 @@
+package org.dteja.dao;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.dteja.models.Product;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
+@Transactional
+public class ProductDAOImpl implements ProductDAO {
+	
+	@Autowired
+	SessionFactory sessionFactory;
+	
+	@Override
+	public boolean addProduct(Product product) {
+		try
+		{
+			sessionFactory.getCurrentSession().save(product);
+			return true;
+		}
+		catch(Exception e)
+		{
+		return false;
+		}
+
+	}
+
+	@Override
+	public boolean deleteProduct(Product product) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateProduct(Product product) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Product> listProducts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Product getProduct(int productId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

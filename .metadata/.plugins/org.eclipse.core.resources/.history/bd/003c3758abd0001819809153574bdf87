@@ -1,0 +1,5 @@
+package org.dteja.controllers;
+
+public class PageController {
+
+}

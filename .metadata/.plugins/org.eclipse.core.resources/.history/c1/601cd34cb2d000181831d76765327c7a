@@ -1,0 +1,12 @@
+package org.dteja.controllers;
+
+
+@Controller
+public class PageController {
+	
+	@RequestMapping("/")
+	public String showIndexPage(){
+		return "index";
+	}
+
+}

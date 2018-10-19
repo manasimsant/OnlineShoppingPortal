@@ -1,0 +1,9 @@
+package org.dteja.dao;
+
+public class UserDAO {
+	public boolean registerUser(User user);
+	public boolean modifyUser(User user);
+	public User getUser(String username);
+
+
+}

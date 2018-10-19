@@ -1,0 +1,5 @@
+package org.dteja.dao;
+
+public class ProductDAOImpl {
+
+}

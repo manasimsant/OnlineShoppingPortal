@@ -1,0 +1,6 @@
+package org.dteja.controllers;
+
+s
+public String showIndex(){
+	return "index";
+}

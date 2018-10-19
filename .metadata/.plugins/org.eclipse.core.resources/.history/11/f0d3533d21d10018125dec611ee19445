@@ -1,0 +1,46 @@
+package org.dteja.dao;
+
+import java.util.List;
+
+import org.dteja.models.Category;
+
+public class CategoryDAOImpl implements CategoryDAO	{
+
+	@Override
+	public boolean addCategory(Category category) {
+		try
+		{
+		sessionFactory.getCurrentSession().save(category);	
+		return true;
+		}
+		catch(Exception e)
+		{
+		return false;	
+		}
+	}
+
+	@Override
+	public boolean deleteCategory(Category category) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateCategory(Category category) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Category> listCategories() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Category getCategory(int categoryId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

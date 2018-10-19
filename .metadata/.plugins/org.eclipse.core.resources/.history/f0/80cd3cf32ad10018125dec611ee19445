@@ -1,0 +1,7 @@
+package org.dteja.controllers;
+
+public class CategoryController {
+	
+	CategoryDAO categorydao;
+
+}
